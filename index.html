@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      #container {
+        text-align: center;
+      }
+      #content {
+        width: 640px;
+        margin: auto;
+        position: relative;
+      }
+      #canvas {
+        position: absolute;
+      }
+      input {
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="content">
+        <canvas id="canvas"></canvas>
+        <video
+          id="video"
+          width="640"
+          height="380"
+          controls
+          src="http://vfx.mtime.cn/Video/2019/02/04/mp4/190204084208765161.mp4"
+        ></video>
+      </div>
+      <input type="text" id="text" /> <button id="add">添加弹幕</button>
+      <input type="color" id="color" />
+      <input type="range" id="range" />
+    </div>
+  </body>
+  <script src="./app.js"></script>
+</html>
